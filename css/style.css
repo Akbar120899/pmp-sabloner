@@ -1,0 +1,506 @@
+:root {
+  --body: rgb(95, 98, 109);
+  --bg: rgb(143, 96, 43);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  color: #eaeaea;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--body);
+}
+
+/* header */
+header {
+  text-align: center;
+  background-color: rgba(83, 85, 92, 0.7);
+  height: 8rem;
+  border-bottom: 4px solid rgb(122, 109, 64);
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  padding-top: 1rem;
+}
+
+header a {
+  color: #eaeaea;
+  padding: 2px 3px;
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+
+header a:hover {
+  background-color: #eaeaea;
+  color: rgb(49, 47, 47);
+}
+
+/* hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(../image/bck.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 27%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(95, 98, 109, 1) 8%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+/* hero */
+.content {
+  /* border: 2px solid red; */
+  width: 37rem;
+  height: 20rem;
+  margin: 0 0 0 1rem;
+}
+
+.pnp {
+  text-align: center;
+  border-bottom: 4px solid rgb(126, 75, 17);
+  padding-bottom: 0.7rem;
+}
+
+.pnp h1 {
+  font-style: italic;
+}
+
+.pnp span {
+  color: rgb(143, 96, 43);
+}
+
+.pnp p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hub {
+  /* border: 2px solid black; */
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.hub p {
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  font-weight: 100;
+}
+
+.hub a {
+  background-color: rgb(156, 107, 16);
+  padding: 0.7rem 1.5rem;
+  color: #eaeaea;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 3px rgba(83, 85, 92, 0.7);
+}
+
+.hub a:hover {
+  background-color: rgb(216, 134, 10);
+}
+
+/* tentang kami */
+.tentang-kami {
+  border: 2px solid yellow;
+  margin: auto;
+  height: 150rem;
+}
+.kotak3 {
+  width: 100%rem;
+  height: 35rem;
+  background-color: rgb(0, 0, 0);
+  margin: 1rem 0 0 0;
+  position: fixed;
+  z-index: -9999;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  background-image: url(image/bck1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -50rem;
+}
+
+.kotak4 {
+  width: 100%rem;
+  height: 8rem;
+  background-color: var(--body);
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+.container-judul-tentang-kami {
+  position: absolute;
+  z-index: -2;
+  top: 55rem;
+  border: 2px solid rgb(248, 5, 5);
+  width: 95%;
+  margin: auto 2.5% auto 2.5%;
+}
+/* bagian satu */
+.container-judul-tentang-kami section {
+  border: 2px solid black;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+
+.container-judul-tentang-kami h1 {
+  font-size: 2.4rem;
+  font-style: italic;
+}
+
+.container-judul-tentang-kami span {
+  color: var(--bg);
+}
+
+.container-judul-tentang-kami p {
+  margin-top: 0.5rem;
+  line-height: 1.4rem;
+}
+
+/* tentang kami bagian 2 */
+.c-tk-bagian-dua {
+  border: 2px solid #1b0d9c;
+}
+
+/* bagian 2 kiri */
+.bagian-dua-kiri {
+  margin-top: 2rem;
+  width: 55%;
+  border: 2px solid yellow;
+  float: left;
+}
+
+.layanan {
+  float: left;
+  display: inline-block;
+}
+
+.layanan img {
+  background-color: var(--bg);
+  margin-right: 0.7rem;
+  padding: 5px 5px;
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.ket-layanan {
+  border: 2px solid beige;
+  width: 37rem;
+  float: left;
+  margin-bottom: 2rem;
+}
+
+.ket-layanan h1 {
+  font-size: 1.5rem;
+}
+
+/* bagian 2 kanan */
+.bagian-dua-kanan {
+  margin-top: 2rem;
+  width: 34rem;
+  /* height: 20rem; */
+  /* border: 2px solid rgb(88, 88, 19); */
+  float: left;
+  margin-left: 1.4rem;
+  text-align: center;
+}
+
+.bagian-dua-kanan .dua {
+  font-weight: bold;
+  color: #eaeaea;
+}
+
+.clear {
+  clear: left;
+}
+.kotak5 {
+  width: 100%;
+  height: 10rem;
+  background-color: var(--body);
+  top: 39.5rem;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+/* tentang kami bagian tiga */
+.c-tk-bagian-tiga {
+  border: 2px solid #1b0d9c;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.c-tk-bagian-tiga .slebew {
+  background-color: rgba(94, 93, 92, 0.7);
+  margin: 1.4rem 7% 0 7%;
+  height: 15.4rem;
+}
+
+/* bagian 3 kiri */
+.gambar-slebew {
+  border: 2px solid yellow;
+  width: 23rem;
+  float: left;
+  margin-right: 2rem;
+}
+.slebew .img-slebew {
+  width: 23rem;
+}
+
+/* bagian 3 kanan */
+.ket-slebew {
+  border: 2px solid yellowgreen;
+  width: 43rem;
+  float: left;
+}
+
+.clear-slebew {
+  clear: both;
+}
+
+/* tentang kami end */
+
+/* produk */
+.produk {
+  background-color: var(--body);
+  height: 50rem;
+}
+
+/* media querry */
+
+/* heand phon */
+/* hero */
+
+@media (max-width: 576px) {
+  .content {
+    margin: 2rem auto 0 auto;
+  }
+
+  .pnp {
+    border-bottom: 3px solid rgb(126, 75, 17);
+  }
+
+  .pnp h1 {
+    font-size: 2.5rem;
+  }
+
+  .pnp p {
+    font-size: 1.7rem;
+  }
+
+  .hub p {
+    margin-top: -0.5rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: #e4dede;
+  }
+
+  .hub a {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  /* tentang kami */
+  .tentang-kami {
+    margin: auto;
+    height: 200rem;
+  }
+
+  .kotak3 {
+    background-image: url(image/bck1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -12rem;
+  }
+
+  .container-judul-tentang-kami {
+    top: 75rem;
+  }
+
+  .container-judul-tentang-kami section {
+    width: 80%;
+  }
+
+  .bagian-dua-kiri {
+    width: 99.4%;
+  }
+
+  .layanan img {
+    width: 2.5rem;
+  }
+
+  .ket-layanan {
+    width: 85%;
+  }
+
+  .ket-layanan h1 {
+    font-size: 1.5rem;
+  }
+
+  .ket-layanan p {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .bagian-dua-kanan {
+    margin-top: 2rem;
+    width: 28.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* tentang kami bagian 3 */
+  .c-tk-bagian-tiga .slebew {
+    background-color: rgba(94, 93, 92, 0.7);
+    margin: 1.4rem 0 0 0;
+    height: 15.4rem;
+  }
+
+  .gambar-slebew {
+    width: 23rem;
+
+    margin-right: 0;
+  }
+  .slebew .img-slebew {
+    width: 23rem;
+  }
+
+  .ket-slebew {
+    width: 20rem;
+  }
+}
+
+/* tablet */
+/* hero */
+@media (max-width: 768px) {
+  .content {
+    margin-top: 2.5rem;
+    width: 25rem;
+    height: 20rem;
+  }
+
+  .pnp h1 {
+    font-size: 2.5rem;
+  }
+
+  .pnp p {
+    font-size: 1.4rem;
+  }
+
+  .hub p {
+    font-size: 0.8rem;
+  }
+
+  .hub a {
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+
+  /* tentang kami */
+  .tentang-kami {
+    margin: auto;
+    height: 200rem;
+  }
+
+  .kotak3 {
+    background-image: url(image/bck1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -14rem;
+  }
+
+  .container-judul-tentang-kami section {
+    width: 70%;
+  }
+
+  .bagian-dua-kiri {
+    width: 99.4%;
+  }
+
+  .layanan img {
+    width: 2.5rem;
+  }
+  .ket-layanan {
+    width: 85%;
+  }
+
+  .ket-layanan p {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+
+  /* tentang kami bagian 3 */
+  .c-tk-bagian-tiga .slebew {
+    background-color: rgba(94, 93, 92, 0.7);
+    margin: 1.4rem 0 0 0;
+    height: 33rem;
+  }
+
+  .gambar-slebew {
+    width: auto;
+
+    margin-right: 0;
+  }
+  .slebew .img-slebew {
+    width: 70%;
+  }
+
+  .ket-slebew {
+    width: auto;
+  }
+
+  .ket-slebew h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* laptop */
+@media (max-width: 992px) {
+  .kotak3 {
+    background-image: url(image/bck1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -12rem;
+  }
+
+  .container-judul-tentang-kami section {
+    width: 70%;
+  }
+  .bagian-dua-kiri {
+    width: 99.4%;
+  }
+}
