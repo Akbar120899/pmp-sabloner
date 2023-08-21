@@ -6,6 +6,8 @@
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -15,13 +17,15 @@ body {
   color: #eaeaea;
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--body);
+
+  /* min-height: 3000px; */
 }
 
 /* header */
 header {
   text-align: center;
   background-color: rgba(83, 85, 92, 0.7);
-  height: 8rem;
+  padding-bottom: 0.5rem;
   border-bottom: 4px solid rgb(122, 109, 64);
   position: fixed;
   z-index: 9999;
@@ -29,9 +33,9 @@ header {
   right: 0;
 }
 
-h1 {
+header h1 {
   font-size: 4rem;
-  padding-top: 1rem;
+  padding-top: 0.3rem;
 }
 
 header a {
@@ -74,9 +78,8 @@ header a:hover {
 
 /* hero */
 .content {
-  /* border: 2px solid red; */
-  width: 37rem;
-  height: 20rem;
+  border: 2px solid red;
+  width: 30rem;
   margin: 0 0 0 1rem;
 }
 
@@ -88,6 +91,7 @@ header a:hover {
 
 .pnp h1 {
   font-style: italic;
+  font-size: 3rem;
 }
 
 .pnp span {
@@ -132,19 +136,19 @@ header a:hover {
 .tentang-kami {
   border: 2px solid yellow;
   margin: auto;
-  height: 150rem;
+  height: 300vh;
 }
 .kotak3 {
   width: 100%rem;
-  height: 35rem;
-  background-color: rgb(0, 0, 0);
+  height: 82vh;
+  background-color: rgb(228, 194, 194);
   margin: 1rem 0 0 0;
   position: fixed;
   z-index: -9999;
-  top: 7rem;
+  top: 5.7rem;
   left: 0;
   right: 0;
-  background-image: url(image/bck1.jpg);
+  background-image: url(../image/bck1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -50rem;
@@ -152,7 +156,7 @@ header a:hover {
 
 .kotak4 {
   width: 100%rem;
-  height: 8rem;
+  height: 6.7rem;
   background-color: var(--body);
   top: 0;
   left: 0;
@@ -164,7 +168,7 @@ header a:hover {
 .container-judul-tentang-kami {
   position: absolute;
   z-index: -2;
-  top: 55rem;
+  top: 195vh;
   border: 2px solid rgb(248, 5, 5);
   width: 95%;
   margin: auto 2.5% auto 2.5%;
@@ -194,19 +198,30 @@ header a:hover {
 /* tentang kami bagian 2 */
 .c-tk-bagian-dua {
   border: 2px solid #1b0d9c;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* bagian 2 kiri */
 .bagian-dua-kiri {
   margin-top: 2rem;
-  width: 55%;
+  width: 60%;
   border: 2px solid yellow;
-  float: left;
+  /* float: left; */
+  margin-right: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.layanan-bagian-dua {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
 .layanan {
-  float: left;
   display: inline-block;
+  border: 2px solid pink;
 }
 
 .layanan img {
@@ -219,9 +234,9 @@ header a:hover {
 
 .ket-layanan {
   border: 2px solid beige;
-  width: 37rem;
-  float: left;
-  margin-bottom: 2rem;
+  width: 80%;
+  /* float: left; */
+  /* margin-bottom: 2rem; */
 }
 
 .ket-layanan h1 {
@@ -231,11 +246,11 @@ header a:hover {
 /* bagian 2 kanan */
 .bagian-dua-kanan {
   margin-top: 2rem;
-  width: 34rem;
+  width: 39.3%;
   /* height: 20rem; */
-  /* border: 2px solid rgb(88, 88, 19); */
-  float: left;
-  margin-left: 1.4rem;
+  border: 2px solid rgb(88, 88, 19);
+  /* float: left; */
+  /* margin-left: 1.4rem; */
   text-align: center;
 }
 
@@ -244,21 +259,21 @@ header a:hover {
   color: #eaeaea;
 }
 
-.clear {
+/*.clear {
   clear: left;
-}
+}*/
 .kotak5 {
   width: 100%;
-  height: 10rem;
+  height: 2rem;
   background-color: var(--body);
-  top: 39.5rem;
+  top: 98vh;
   left: 0;
   right: 0;
   position: fixed;
 }
 
 /* tentang kami bagian tiga */
-.c-tk-bagian-tiga {
+/* .c-tk-bagian-tiga {
   border: 2px solid #1b0d9c;
   margin-top: 2rem;
   text-align: center;
@@ -268,10 +283,10 @@ header a:hover {
   background-color: rgba(94, 93, 92, 0.7);
   margin: 1.4rem 7% 0 7%;
   height: 15.4rem;
-}
+} */
 
 /* bagian 3 kiri */
-.gambar-slebew {
+/* .gambar-slebew {
   border: 2px solid yellow;
   width: 23rem;
   float: left;
@@ -279,10 +294,10 @@ header a:hover {
 }
 .slebew .img-slebew {
   width: 23rem;
-}
+} */
 
 /* bagian 3 kanan */
-.ket-slebew {
+/* .ket-slebew {
   border: 2px solid yellowgreen;
   width: 43rem;
   float: left;
@@ -290,217 +305,133 @@ header a:hover {
 
 .clear-slebew {
   clear: both;
-}
+} */
 
 /* tentang kami end */
 
 /* produk */
-.produk {
+/* .produk {
   background-color: var(--body);
   height: 50rem;
-}
+} */
 
 /* media querry */
 
-/* heand phon */
-/* hero */
-
-@media (max-width: 576px) {
-  .content {
-    margin: 2rem auto 0 auto;
-  }
-
-  .pnp {
-    border-bottom: 3px solid rgb(126, 75, 17);
-  }
-
-  .pnp h1 {
-    font-size: 2.5rem;
-  }
-
-  .pnp p {
-    font-size: 1.7rem;
-  }
-
-  .hub p {
-    margin-top: -0.5rem;
-    font-size: 0.8rem;
-    line-height: 1rem;
-    color: #e4dede;
-  }
-
-  .hub a {
-    font-size: 0.7rem;
-    font-weight: bold;
-  }
-
-  /* tentang kami */
-  .tentang-kami {
-    margin: auto;
-    height: 200rem;
+/* laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 97%;
   }
 
   .kotak3 {
-    background-image: url(image/bck1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -12rem;
+    height: 89vh;
+
+    background-position-y: -30rem;
   }
 
-  .container-judul-tentang-kami {
-    top: 75rem;
-  }
-
-  .container-judul-tentang-kami section {
-    width: 80%;
-  }
-
-  .bagian-dua-kiri {
-    width: 99.4%;
-  }
-
-  .layanan img {
-    width: 2.5rem;
-  }
-
-  .ket-layanan {
-    width: 85%;
-  }
-
-  .ket-layanan h1 {
-    font-size: 1.5rem;
-  }
-
-  .ket-layanan p {
-    font-size: 0.8rem;
-    line-height: 1rem;
-  }
-
+  /* bagian dua kanan */
   .bagian-dua-kanan {
-    margin-top: 2rem;
-    width: 28.5rem;
-    margin-left: 0;
-    text-align: center;
-  }
-
-  /* tentang kami bagian 3 */
-  .c-tk-bagian-tiga .slebew {
-    background-color: rgba(94, 93, 92, 0.7);
-    margin: 1.4rem 0 0 0;
-    height: 15.4rem;
-  }
-
-  .gambar-slebew {
-    width: 23rem;
-
-    margin-right: 0;
-  }
-  .slebew .img-slebew {
-    width: 23rem;
-  }
-
-  .ket-slebew {
-    width: 20rem;
+    /* margin-top: 2rem; */
+    width: 38.9%;
+    /* height: 20rem; */
+    /* border: 2px solid rgb(88, 88, 19); */
+    /* float: left; */
+    /* margin-left: 1.4rem; */
+    /* text-align: center; */
   }
 }
 
 /* tablet */
 /* hero */
 @media (max-width: 768px) {
-  .content {
-    margin-top: 2.5rem;
-    width: 25rem;
-    height: 20rem;
+  html {
+    font-size: 79.5%;
+  }
+  /* tentang kami */
+  .tentang-kami {
+    height: 300vh;
   }
 
-  .pnp h1 {
-    font-size: 2.5rem;
+  .kotak3 {
+    height: 89vh;
+
+    background-position-y: -20rem;
+  }
+
+  /* bagian dua kanan */
+  .bagian-dua-kanan {
+    /* margin-top: 2rem; */
+    width: 38.1%;
+    /* height: 20rem; */
+    /* border: 2px solid rgb(88, 88, 19); */
+    /* float: left; */
+    /* margin-left: 1.4rem; */
+    /* text-align: center; */
+  }
+}
+
+/* heand phon */
+/* hero */
+
+@media (max-width: 576px) {
+  /* html {
+    font-size: 55%;
+  } */
+
+  header h1 {
+    font-size: 2.7rem;
+  }
+
+  .content {
+    margin: auto;
   }
 
   .pnp p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
-
-  .hub p {
-    font-size: 0.8rem;
-  }
-
-  .hub a {
-    font-size: 0.7rem;
-    font-weight: bold;
+  .pnp h1 {
+    font-size: 2.4rem;
   }
 
   /* tentang kami */
   .tentang-kami {
-    margin: auto;
-    height: 200rem;
+    /* border: 2px solid yellow;
+    margin: auto; */
+    height: 350vh;
+  }
+  .kotak3 {
+    width: 100%rem;
+    height: 91.7vh;
+    top: 4.3rem;
+    background-position-y: -1rem;
   }
 
-  .kotak3 {
-    background-image: url(image/bck1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -14rem;
+  .kotak4 {
+    height: 5.2rem;
   }
 
   .container-judul-tentang-kami section {
-    width: 70%;
+    width: 99%;
   }
 
+  /* tentang kami bagian dua */
   .bagian-dua-kiri {
-    width: 99.4%;
-  }
-
-  .layanan img {
-    width: 2.5rem;
-  }
-  .ket-layanan {
-    width: 85%;
-  }
-
-  .ket-layanan p {
-    font-size: 0.9rem;
-    line-height: 1.2rem;
-  }
-
-  /* tentang kami bagian 3 */
-  .c-tk-bagian-tiga .slebew {
-    background-color: rgba(94, 93, 92, 0.7);
-    margin: 1.4rem 0 0 0;
-    height: 33rem;
-  }
-
-  .gambar-slebew {
-    width: auto;
-
+    /* margin-top: 2rem; */
+    width: 100%;
+    /* border: 2px solid yellow; */
+    /* float: left; */
     margin-right: 0;
-  }
-  .slebew .img-slebew {
-    width: 70%;
-  }
-
-  .ket-slebew {
-    width: auto;
+    /* display: flex;
+    flex-wrap: wrap; */
   }
 
-  .ket-slebew h1 {
-    font-size: 1.4rem;
-  }
-}
-
-/* laptop */
-@media (max-width: 992px) {
-  .kotak3 {
-    background-image: url(image/bck1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -12rem;
-  }
-
-  .container-judul-tentang-kami section {
-    width: 70%;
-  }
-  .bagian-dua-kiri {
-    width: 99.4%;
+  .bagian-dua-kanan {
+    /* margin-top: 2rem; */
+    width: 100%;
+    /* height: 20rem; */
+    /* border: 2px solid rgb(88, 88, 19); */
+    /* float: left; */
+    /* margin-left: 1.4rem; */
+    /* text-align: center; */
   }
 }
